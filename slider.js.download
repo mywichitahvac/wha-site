@@ -1,0 +1,24 @@
+jQuery(document).ready(function(){
+    jQuery('.wichitahvac-slider').slick(
+        {
+            infinite: true,
+            autoplay: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: '24vw',
+            dots: false,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: false,
+                        centerPadding: '0'
+                    }
+                }
+            ]
+        }
+    );
+});
